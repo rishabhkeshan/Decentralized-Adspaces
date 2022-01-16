@@ -114,24 +114,9 @@ function Dropdown({
                 </div>
               ) : null}
               <div className="flex" style={{ marginBottom: "12px" }}>
-                <div onClick={handleClick} className="text-bheader sp-text">
-                  Leaderboard
-                </div>
               </div>
 
               <div className="flex" style={{ marginBottom: "12px" }}>
-                <div
-                  onClick={() => {
-                    var win = window.open(
-                      "https://t.me/millionUSDThomepage",
-                      "_blank"
-                    );
-                    win.focus();
-                  }}
-                  className="text-bheader sp-text"
-                >
-                  FAQ
-                </div>
               </div>
             </div>
           </div>

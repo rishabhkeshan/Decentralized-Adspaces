@@ -34,42 +34,11 @@ const Header = ({walletConnected, account, buyMode, setBuyMode, manageModal, met
             });
           }
       };
-        const handleClick=()=> {
-          history.push("/leaderboard");
-        }
+
+
     return (
       <header className="header">
         <div className="social-container w-1/3 lg:w-2/5">
-          <a className="social-icons" href="https://discord.com">
-            <img src={discord} alt="discord" />
-          </a>
-          <a
-            className="social-icons"
-            href="https://twitter.com/MillionDollarfi"
-          >
-            <img src={twitter} alt="twitter" />
-          </a>
-          <a className="social-icons" href="https://t.me/milliondollarfi">
-            <img src={telegram} alt="telegram" />
-          </a>
-          <div
-            onClick={() => {
-              var win = window.open(
-                "https://faint-lute-2d5.notion.site/Million-Dollar-Homepage-FAQs-34c60e21fddc4a58ba5401df8bad753b",
-                "_blank"
-              );
-              win.focus();
-            }}
-            className="text-bheader sp-text lg:flex hidden"
-          >
-            FAQ
-          </div>
-          <div
-            onClick={handleClick}
-            className="text-bheader sp-text lg:flex hidden"
-          >
-            Leaderboard
-          </div>
         </div>
         <div className="mdlogo-container w-1/3 lg:w-2/5 flex justify-center items-center">
           <a href="./">
