@@ -13,11 +13,11 @@
 .connect-button{
     @apply rounded-full bg-themecyan px-5 py-2 text-black text-sm lg:text-base font-semibold cursor-pointer;
     background: linear-gradient(180deg, #00FFFB 7.92%, #0094FF 224.69%);
-    font-size: 0.9rem;
+    font-size: 0.91rem;
 }
 .buy-button{
     @apply rounded-full border-2 mx-2 border-themecyan px-4 cursor-pointer py-2 text-themecyan text-sm lg:text-base font-semibold;
-    font-size: 0.9rem;
+    font-size: 0.91rem;
 }
 .dd-connect-button{
     @apply rounded-full bg-themecyan px-2 w-36 py-2 text-black mx-2 font-semibold cursor-pointer text-center;
