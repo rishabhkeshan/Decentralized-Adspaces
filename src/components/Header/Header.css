@@ -1,0 +1,51 @@
+.header{
+    @apply flex h-20 px-3 lg:px-12 items-center justify-between border-b-2 border-solidnavy
+}
+.mdlogo{
+    @apply w-auto h-5 lg:h-7 self-center;
+}
+.sidepanel{
+    @apply hidden lg:flex text-white items-center
+}
+.sp-text{
+    @apply mx-2 cursor-pointer text-sm lg:text-base;
+}
+.connect-button{
+    @apply rounded-full bg-themecyan px-5 py-2 text-black text-sm lg:text-base font-semibold cursor-pointer;
+    background: linear-gradient(180deg, #00FFFB 7.92%, #0094FF 224.69%);
+    font-size: 0.9rem;
+}
+.buy-button{
+    @apply rounded-full border-2 mx-2 border-themecyan px-4 cursor-pointer py-2 text-themecyan text-sm lg:text-base font-semibold;
+    font-size: 0.9rem;
+}
+.dd-connect-button{
+    @apply rounded-full bg-themecyan px-2 w-36 py-2 text-black mx-2 font-semibold cursor-pointer text-center;
+    font-size: 15px;
+    background: linear-gradient(180deg, #00FFFB 7.92%, #0094FF 224.69%);
+}
+.dd-buy-button{
+    @apply rounded-full border-2 mx-2 border-themecyan px-2 w-24 cursor-pointer py-2 text-themecyan font-semibold text-center;
+    font-size: 15px;
+}
+.social-icons{
+    @apply h-3 w-3 lg:h-6 lg:w-6 mx-1 lg:mx-2;
+}
+.social-container{
+    @apply flex justify-start items-center;
+}
+.mdlogo-container{
+    justify-self: center;
+}
+#mobile-menu{
+    background-color: #010C1C;
+    color: #fff;
+}
+.faq-button{
+    border: 2px solid #72F6FA;
+    padding: 6px;
+    border-radius: 8px;
+}
+.text-bheader{
+    color: #72F6FA;
+}
