@@ -1,0 +1,317 @@
+.main-container {
+  display: flex;
+  padding: 0 0;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 66px);
+  overflow-y: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.responsive-layout{
+  display: grid;
+  grid-template-columns: repeat(17,5.0vw);
+  grid-template-rows: repeat(7, 5.0vw);
+  grid-gap: 0.50vw;
+}
+.tippy-tooltip.tomato-theme {
+  background: radial-gradient(172.31% 172.31% at 14.21% 0.22%, #3478DF 0.01%, #AD00FF 100%);
+  color: white;
+  border-radius: 16px;
+  font-size: 12px;
+}
+.tippy-tooltip.tomato-theme[data-placement^='top'] .tippy-arrow {
+  border-bottom-color: radial-gradient(172.31% 172.31% at 14.21% 0.22%, #3478DF 0.01%, #AD00FF 100%);
+}
+.tippy-tooltip.tomato-theme[data-placement^='bottom'] .tippy-arrow {
+  border-bottom-color: radial-gradient(172.31% 172.31% at 14.21% 0.22%, #3478DF 0.01%, #AD00FF 100%);
+}
+.tippy-tooltip.tomato-theme[data-placement^='left'] .tippy-arrow {
+  border-bottom-color: radial-gradient(172.31% 172.31% at 14.21% 0.22%, #3478DF 0.01%, #AD00FF 100%);
+}
+.tippy-tooltip.tomato-theme[data-placement^='right'] .tippy-arrow {
+  border-bottom-color: radial-gradient(172.31% 172.31% at 14.21% 0.22%, #3478DF 0.01%, #AD00FF 100%);
+}
+.soldIndex{
+    color:rgba(0, 255, 251, 0.8);
+    font-size: 8px;
+}
+.square{
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sq{
+  background: rgba(0, 240, 255, 0.1667);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.rect{
+  display: flex;
+  flex-direction: column;
+}
+
+.rectangle{
+  background: rgba(0, 240, 255, 0.1667);
+  overflow: hidden;
+  width:100%;
+  height: calc(90%/2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  
+}
+.rect-top{
+  margin-bottom: 5%;
+}
+.rect-bottom{
+ margin-top: 5%
+}
+span{
+  font-size: 8px;
+}
+.img-block {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* span.img-block img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+} */
+.grid-box {
+  display: grid;
+}
+.hoverBuy{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: background-color 0.5s;
+    text-align: center;
+}
+
+.ethNftIcon{
+  @apply h-2 lg:h-2.5;
+  padding-left: 2px;
+}
+.hoverSold {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: background-color 0.5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    /* pointer-events: none; */
+    /* background-position:center;
+    background-image: url('../../assets/soldLabel.svg');
+    background-size: contain;
+    background-repeat: no-repeat; */
+}
+.wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 188, 212, 0);
+    transition: background-color 0.5s;
+}
+
+.hover:hover {
+    background-color: rgba(0, 188, 212, 0.8);
+    
+}
+
+.hoverBuy{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: background-color 0.5s;
+    text-align: center;
+}
+
+.buyEnabled{
+    color:rgba(0, 255, 251, 1);
+    font-size: 10px;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buyDisabled {
+    color:grey;
+    cursor: not-allowed;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.blackbg{
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+}
+
+.blackbg .modal-header {
+    border-bottom: black !important;
+}
+
+.modal-footer{
+    border-top: black !important;
+}
+.borderBox{
+    border: 1px solid white;
+}
+
+.buyBoxHeader{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+.buyBoxPrice{
+    text-align: center;
+    color: green ;
+    font-size:1.5rem;
+}
+.buyBoxButton{
+    margin:5%;
+    text-align: center;
+
+}
+.fileLabel{
+    text-align: center;
+}
+.borderBoxDotted{
+    border:0.2px dashed white;
+}
+
+.inputLabel{
+    margin:10%;
+}
+
+@media screen and (max-width : 720px)
+{
+  .buyEnabled{
+    font-size:0.2rem !important;
+  }
+  .nftDetails{
+    font-size:0.1rem !important;
+    margin:1%!important;
+    padding:0.5% !important;
+  }
+}
+
+@media screen and (max-width : 900px)
+{
+    .buyEnabled{
+    font-size:0.3rem !important;
+  }
+}
+
+.rect-top{
+  margin-bottom: 5%;
+}
+.rect-bottom{
+ margin-top: 5%
+}
+span{
+  font-size: 8px;
+}
+
+/* @media (min-width:1180px){
+.square:nth-child(103) {
+  grid-column: 2;
+}
+} */
+/* @media (min-width:1024px) and (max-width:1180px){
+.responsive-layout{
+  grid-template-columns: repeat(13,5.5vw);
+  grid-template-rows: repeat(9, 5.5vw);
+  grid-gap: 0.55vw;
+
+}
+}
+@media (min-width:768px) and (max-width:1024px){
+.responsive-layout{
+  grid-template-columns: repeat(13,5.5vw);
+  grid-template-rows: repeat(9, 5.5vw);
+  grid-gap: 0.55vw;
+
+}
+}
+
+@media (min-width:375px) and (max-width:812px){
+.responsive-layout{
+  grid-template-columns: repeat(9,6.5vw);
+  grid-template-rows: repeat(13, 6.5vw);
+  grid-gap: 0.75vw;
+
+}}
+@media (min-width:275px) and (max-width:375px){
+.responsive-layout{
+  grid-template-columns: repeat(9,8.5vw);
+  grid-template-rows: repeat(13, 8.5vw);
+  grid-gap: 0.85vw;
+
+}} */
+
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip-box {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  top: calc(100% + 5px);
+  display: none;
+}
+
+.tooltip-box.visible {
+  display: block;
+}
+
+.tooltip-arrow {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgba(0, 0, 0, 0.7) transparent;
+}

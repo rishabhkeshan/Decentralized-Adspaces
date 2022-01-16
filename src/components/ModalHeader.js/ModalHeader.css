@@ -1,0 +1,9 @@
+.modalheader{
+    @apply flex h-20 px-12 items-center justify-between border-b-2 border-solidnavy
+}
+.logo{
+    @apply w-auto h-5 md:h-7
+}
+.mh-sidepanel{
+    @apply flex text-white items-center
+}

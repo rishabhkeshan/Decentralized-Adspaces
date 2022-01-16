@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import HomeScreen from "./pages/HomeScreen";
+import { Switch, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import { SnackbarProvider } from "notistack";
 
+const useStyles = makeStyles({
+  // success: { backgroundColor: "#39F2AF" },
+  // error: { backgroundColor: "#FF5A5A" },
+  // warning: { backgroundColor: "#FFD458" },
+});
 function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SnackbarProvider
+      classes={{
+        variantSuccess: classes.success,
+        variantError: classes.error,
+        variantWarning: classes.warning,
+        variantInfo: classes.info,
+      }}
+      anchorOrigin={{
+        vertical: "bottom",
+        horizontal: "right",
+      }}
+      maxSnack={3}
+    >
+      <Switch>
+        <Route exact path="/" render={() => <HomeScreen />} />
+      </Switch>
+    </SnackbarProvider>
   );
 }
 

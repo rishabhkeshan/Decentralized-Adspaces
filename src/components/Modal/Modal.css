@@ -1,0 +1,307 @@
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  background: linear-gradient(134.45deg, #0c134b 0%, #22356f 100%);
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+.modalmain-container {
+  width: 70%;
+
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.buy-header {
+  @apply text-themecyan flex flex-col md:flex-row justify-between items-center;
+  font-size: 14px;
+  width: 70%;
+  margin: auto;
+  padding-top: 2rem;
+  height: 4rem;
+}
+.mm-header {
+  @apply text-themecyan flex flex-col md:flex-row justify-between items-center pt-4 sm:pt-32 h-8;
+  font-size: 14px;
+  width: 60%;
+  margin: auto;
+  padding-top: 2rem;
+  height: 4rem;
+}
+.buy-illustration{
+  @apply hidden lg:flex;
+}
+.buy-header-text {
+  @apply text-white text-xl flex justify-center items-center;
+}
+.buy-header-info{
+  @apply hidden md:flex;
+}
+.buy-mm-info{
+  @apply flex flex-col items-center pt-8 md:hidden text-themecyan;
+  font-size: 14px;
+}
+.ethicon {
+  height: 20px;
+  @apply px-2;
+}
+
+.line-break {
+  height: 1.5px;
+  width: 100%;
+  background-color: #3d7ad7;
+  opacity: 0.3;
+}
+.mm-line-break {
+  width: 60%;
+  height: 1.5px;
+  background-color: #3d7ad7;
+  opacity: 0.3;
+  margin: auto;
+  margin-top: 1rem;
+}
+.buy-container {
+  @apply flex justify-center lg:justify-between py-8 md:py-16;
+  align-items: center;
+}
+.buy-receipt {
+  background-image: url(../../assets/BuyNFTReceipt.png);
+  height: 100%;
+  background-size: contain;
+  padding: 16px 0;
+}
+.receipt-header {
+  @apply text-lg md:text-2xl;
+  height: 50px;
+  @apply text-white px-6 pb-4;
+}
+.receipt-footer {
+  height: 50px;
+}
+.dashed-linebreak {
+  border: none;
+  border-top: 1.5px dashed #3d7ad7;
+  height: 1px;
+  width: 100%;
+}
+.receipt-ethicon {
+  @apply h-4 md:h-8 px-2;
+}
+.receipt-price {
+  @apply flex justify-center items-center py-2;
+}
+.receipt-container {
+  @apply py-4 md:py-8 text-lg md:text-3xl items-center md:items-start;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+.managemodal-select-container {
+  @apply hidden lg:flex lg:items-center;
+}
+.phonemodal-select-container {
+  @apply flex items-center lg:hidden align-middle pt-4 sm:pt-8 mb-4;
+  color:rgba(0, 240, 255, 0.5);
+}
+.managemodal-main-container {
+  @apply flex justify-center lg:justify-between;
+  margin: auto;
+  width: 60%;
+}
+.mobile-upload{
+  @apply flex flex-col items-start lg:hidden;
+}
+@media only screen and (max-width: 1023px) {
+  .input-image{
+    top:25% !important;
+    left: 100px !important;
+    font-size: 16px !important;
+  }
+  .input-image-text{
+    width: 180px !important;
+    display: flex;
+  }
+}
+.manageinput-text {
+  @apply text-sm lg:text-base;
+  color: rgba(0, 240, 255, 0.5);
+  margin-bottom: 6px;
+  margin-left: 16px;
+}
+.upload-text {
+  @apply text-sm lg:text-base;
+  color: rgba(0, 240, 255, 0.5);
+  margin-bottom: 6px;
+}
+.upload-img-text {
+  @apply text-xs;
+  color: rgba(0, 240, 255, 0.5);
+}
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: rgba(0, 240, 255, 0.4) !important
+;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: rgba(0, 240, 255, 0.4) !important;
+
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: rgba(0, 240, 255, 0.4) !important;
+
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(0, 240, 255, 0.4) !important;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(0, 240, 255, 0.4) !important;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: rgba(0, 240, 255, 0.4) !important;
+}
+.manageinput-field {
+  background: #141d5b;
+  border: 1px solid #3d7ad7;
+  border-radius: 14px;
+  padding: 8px;
+  color: rgba(0, 240, 255, 0.5);
+  margin-bottom: 1rem;
+  @apply w-72 lg:w-96 text-xs lg:text-base;
+}
+.manageinput-field:focus {
+  border: 1px solid #39f2af !important;
+}
+.mm-left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @apply lg:pt-8 pr-4;
+}
+.mm-right-container {
+  @apply hidden lg:flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  align-items: center;
+}
+.mm-upload-image{
+    /* background-image: #141D5B; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3D7AD7;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 8px;
+}
+.dropdown-nft {
+  background: #141d5b;
+  border-radius: 4px;
+  padding: 6px;
+  color: rgba(0, 240, 255, 0.5);
+}
+.dropdown-nft::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.dropdown-nft::-webkit-scrollbar-track {
+  background: rgba(0, 240, 255, 0.2);
+}
+
+/* Handle */
+.dropdown-nft::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.dropdown-nft::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.receipt-buybutton {
+  @apply rounded-full text-lg border-none px-4 cursor-pointer py-2 text-black font-semibold;
+  font-size: 15px;
+  background: linear-gradient(180deg, #00fffb 7.92%, #0094ff 224.69%);
+}
+.resetnft-button {
+  @apply mt-4 p-2 sm:p-4;
+  color: #00fffb;
+  border: 1.5px solid #40f3ff;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  cursor: pointer;
+}
+.updatenft-button {
+  @apply mt-4 p-2 sm:p-4;
+  background-color: #00fffb;
+  /* border: 1.5px solid #40f3ff; */
+  color: #010C1C;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  cursor: pointer;
+}
+.modal-footer {
+  height: 4rem !important;
+}
+.file-container {
+  border: 1px dashed rgba(63, 243, 255, 0.33);
+border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  color:rgba(255,255,255,0.3);
+  position: relative;
+  @apply flex flex-col justify-center items-center text-center text-xs;
+}
+.file-upload {
+  @apply pb-6 h-16 hidden xl:flex;
+}
+.drag-text {
+  color:  rgba(0, 240, 255, 0.4);
+  @apply hidden lg:flex pt-1 px-1;
+}
+.row-layout{
+  @apply flex lg:flex-col xl:flex-row;
+}
+.column-layout{
+  @apply flex lg:flex-col xl:flex-row;
+}
+.upload-inner-text{
+  @apply text-xs pt-1 px-1;
+  font-weight: normal;
+  letter-spacing: -0.015em;
+
+}
+@media only screen and (max-width: 1024px) {
+.upload-inner-text{
+  font-size: 0.45rem;
+  line-height: 8px;
+}
+}
